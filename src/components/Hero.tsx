@@ -29,59 +29,62 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          {/* Profile Image */}
-          <div className="flex justify-center mb-8">
-            <Avatar className="h-32 w-32 md:h-40 md:w-40 ring-4 ring-primary/20 hover-scale">
+        <div className={`grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          {/* Left Column - Content */}
+          <div className="text-center md:text-left">
+            {/* Main heading */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              <span className="text-foreground">Hello, I'm </span>
+              <span className="text-gradient">M GNANESH</span>
+            </h1>
+            
+            <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-semibold mb-6 text-foreground/90">
+              Web Developer & UI/UX Designer
+            </h2>
+
+            <p className="text-lg md:text-xl text-muted-foreground mb-8">
+              Building modern, accessible web and mobile experiences — from product concept to production. 
+              Specializing in front-end development, responsive interfaces, and human-centered design.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
+              <Button asChild size="lg" className="text-base group">
+                <Link to="/#portfolio">
+                  See My Work
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="text-base">
+                <Link to="/#contact">Get in Touch</Link>
+              </Button>
+            </div>
+
+            {/* Quick contact */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start items-center text-sm">
+              <a 
+                href="tel:+919538442239" 
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                <span>+91 95384 42239</span>
+              </a>
+              <a 
+                href="mailto:gnaneshgnani5454@gmail.com"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Mail className="h-4 w-4" />
+                <span>gnaneshgnani5454@gmail.com</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Right Column - Profile Image */}
+          <div className="flex justify-center md:justify-end">
+            <Avatar className="h-64 w-64 md:h-80 md:w-80 lg:h-96 lg:w-96 ring-4 ring-primary/20 hover-scale shadow-2xl">
               <AvatarImage src={profileImage} alt="M GNANESH - Web Developer & UI/UX Designer" />
-              <AvatarFallback className="text-4xl font-bold">MG</AvatarFallback>
+              <AvatarFallback className="text-6xl font-bold">MG</AvatarFallback>
             </Avatar>
-          </div>
-          
-          {/* Main heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-foreground">Hello, I'm </span>
-            <span className="text-gradient">M GNANESH</span>
-          </h1>
-          
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-foreground/90">
-            Web Developer & UI/UX Designer
-          </h2>
-
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Building modern, accessible web and mobile experiences — from product concept to production. 
-            Specializing in front-end development, responsive interfaces, and human-centered design.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button asChild size="lg" className="text-base group">
-              <Link to="/#portfolio">
-                See My Work
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="text-base">
-              <Link to="/#contact">Get in Touch</Link>
-            </Button>
-          </div>
-
-          {/* Quick contact */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-sm">
-            <a 
-              href="tel:+919538442239" 
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-            >
-              <Phone className="h-4 w-4" />
-              <span>+91 95384 42239</span>
-            </a>
-            <a 
-              href="mailto:gnaneshgnani5454@gmail.com"
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-            >
-              <Mail className="h-4 w-4" />
-              <span>gnaneshgnani5454@gmail.com</span>
-            </a>
           </div>
         </div>
       </div>
