@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Link } from "react-router-dom";
 import { ArrowRight, Phone, Mail } from "lucide-react";
 import heroWorkspace from "@/assets/hero-workspace.jpg";
+import profileImage from "@/assets/profile-image.jpg";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,6 +30,14 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          {/* Profile Image */}
+          <div className="flex justify-center mb-8">
+            <Avatar className="h-32 w-32 md:h-40 md:w-40 ring-4 ring-primary/20 hover-scale">
+              <AvatarImage src={profileImage} alt="M GNANESH - Web Developer & UI/UX Designer" />
+              <AvatarFallback className="text-4xl font-bold">MG</AvatarFallback>
+            </Avatar>
+          </div>
+          
           {/* Main heading */}
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="text-foreground">Hello, I'm </span>
