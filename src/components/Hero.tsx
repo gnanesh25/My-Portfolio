@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, Mail } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroWorkspace from "@/assets/hero-workspace.jpg";
 import profileImage from "@/assets/profile-image.jpg";
 const Hero = () => {
@@ -49,19 +49,19 @@ M GNANESH</span>
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="text-base">
-                <Link to="/#contact">Get in Touch</Link>
+                
               </Button>
             </div>
 
             {/* Quick contact */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start items-center text-sm">
               <a href="tel:+919538442239" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                <Phone className="h-4 w-4" />
-                <span>+91 95384 42239</span>
+                
+                
               </a>
               <a href="mailto:gnaneshgnani5454@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                <Mail className="h-4 w-4" />
-                <span>gnaneshgnani5454@gmail.com</span>
+                
+                
               </a>
             </div>
           </div>
