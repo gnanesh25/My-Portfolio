@@ -64,12 +64,16 @@ const Hero = () => {
           {/* Right side - Profile photo */}
           <div className="flex justify-center md:justify-end">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              {/* Animated rings */}
+              <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-ping" />
+              <div className="absolute inset-0 rounded-full border-2 border-primary/20" />
+              
+              {/* Profile image */}
               <img 
                 src={profilePhoto} 
                 alt="M Gnanesh - Web Developer & UI/UX Designer" 
-                className="w-full h-full object-cover rounded-2xl shadow-2xl"
+                className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-primary/40"
               />
-              <div className="absolute inset-0 rounded-2xl ring-2 ring-primary/20" />
             </div>
           </div>
         </div>
