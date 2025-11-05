@@ -26,8 +26,7 @@ const Hero = () => {
             {/* Main heading */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="text-foreground">Hello, I'm </span>
-              <span className="text-gradient">
-M GNANESH</span>
+              <span className="text-gradient whitespace-nowrap">M GNANESH</span>
             </h1>
             
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-foreground/90">
