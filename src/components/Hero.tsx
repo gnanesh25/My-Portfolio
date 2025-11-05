@@ -26,7 +26,8 @@ const Hero = () => {
             {/* Main heading */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="text-foreground">Hello, I'm </span>
-              <span className="text-gradient">M GNANESH</span>
+              <span className="text-gradient">
+M GNANESH</span>
             </h1>
             
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-foreground/90">
@@ -69,11 +70,7 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full border-2 border-primary/20" />
               
               {/* Profile image */}
-              <img 
-                src={profilePhoto} 
-                alt="M Gnanesh - Web Developer & UI/UX Designer" 
-                className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-primary/40"
-              />
+              <img src={profilePhoto} alt="M Gnanesh - Web Developer & UI/UX Designer" className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-primary/40" />
             </div>
           </div>
         </div>
