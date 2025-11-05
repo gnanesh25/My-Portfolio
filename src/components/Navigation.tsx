@@ -20,10 +20,10 @@ const Navigation = () => {
     name: "About",
     href: "/#about"
   }, {
-    name: "Portfolio",
+    name: "Project",
     href: "/#portfolio"
   }, {
-    name: "Services",
+    name: "Skills",
     href: "/#services"
   }, {
     name: "Contact",
@@ -45,9 +45,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">MG</span>
+              <span className="text-primary-foreground font-bold text-xl">MGR</span>
             </div>
-            <span className="text-xl font-bold hidden sm:block">M GNANESH</span>
+            <span className="text-xl font-bold hidden sm:block">MGR</span>
           </Link>
 
           {/* Desktop Navigation */}
