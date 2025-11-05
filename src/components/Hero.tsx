@@ -34,10 +34,7 @@ M GNANESH</span>
               Web Developer & UI/UX Designer
             </h2>
 
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Building modern, accessible web and mobile experiences — from product concept to production. 
-              Specializing in front-end development, responsive interfaces, and human-centered design.
-            </p>
+            <p className="text-lg md:text-xl text-muted-foreground mb-8">Building modern, accessible web and mobile experiences — from product concept to production. Specializing in front-end development, and human-centered design.</p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-12">
