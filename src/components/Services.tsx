@@ -11,19 +11,11 @@ const Services = () => {
   }, {
     icon: Monitor,
     title: "Front-end Development",
-    description: "HTML, CSS, JavaScript, React, and Next.js expertise with component-driven, maintainable architecture."
-  }, {
-    icon: Smartphone,
-    title: "Responsive Design",
-    description: "Mobile-first approach ensuring perfect adaptation across all devices with rigorous cross-device testing."
+    description: "HTML, CSS, and JavaScript expertise with component-driven, maintainable architecture."
   }, {
     icon: Layers,
     title: "App Design",
     description: "Mobile UI design, voice interfaces, and accessibility-centered experiences for inclusive applications."
-  }, {
-    icon: Zap,
-    title: "AI Integration",
-    description: "Implementing AI-powered features, computer vision solutions, and intelligent user experiences."
   }];
   return <section id="services" className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-6">
@@ -31,7 +23,7 @@ const Services = () => {
           {/* Section header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              My <span className="text-gradient">Services</span>
+              My <span className="text-gradient">Skills</span>
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -40,7 +32,7 @@ const Services = () => {
           </div>
 
           {/* Services grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {services.map((service, index) => <div key={service.title} className="glass-card p-8 rounded-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group animate-slide-up" style={{
             animationDelay: `${index * 0.1}s`
           }}>
