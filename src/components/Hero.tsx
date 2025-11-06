@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className={`grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Left side - Text content */}
           <div className="text-center md:text-left">
             {/* Main heading */}
