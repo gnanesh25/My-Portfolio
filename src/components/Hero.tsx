@@ -60,8 +60,8 @@ M GNANESH</span>
           </div>
 
           {/* Right side - Profile photo */}
-          <div className="flex justify-center md:justify-end">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+          <div className="flex justify-center md:justify-end mb-8 md:mb-0">
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
               {/* Animated rings */}
               <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-ping" />
               <div className="absolute inset-0 rounded-full border-2 border-primary/20" />
