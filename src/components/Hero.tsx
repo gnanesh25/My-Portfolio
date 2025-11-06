@@ -39,10 +39,10 @@ M GNANESH</span>
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-12">
               <Button asChild size="lg" className="text-base group">
-                <Link to="/#portfolio">
+                <a href="#portfolio">
                   See My Work
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="text-base">
                 
