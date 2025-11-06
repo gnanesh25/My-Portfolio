@@ -64,7 +64,7 @@ const Navigation = () => {
 
           <div className="hidden md:block">
             <Button asChild>
-              <Link to="/#contact">Contact</Link>
+              <a href="#contact">Contact</a>
             </Button>
           </div>
 
@@ -86,9 +86,9 @@ const Navigation = () => {
                   {link.name}
                 </Link>)}
               <Button asChild className="w-full">
-                <Link to="/#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
                   Let's Talk
-                </Link>
+                </a>
               </Button>
             </div>
           </div>}
