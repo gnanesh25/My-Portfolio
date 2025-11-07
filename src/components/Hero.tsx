@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Mail } from "lucide-react";
 import heroWorkspace from "@/assets/hero-workspace.jpg";
-import profilePhoto from "@/assets/profile.jpg";
+import profilePhoto from "@/assets/profile-gnanesh.png";
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
