@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import heroWorkspace from "@/assets/hero-workspace.jpg";
 import profilePhoto from "@/assets/profile-gnanesh.png";
 const Hero = () => {
@@ -45,7 +45,10 @@ M GNANESH</span>
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="text-base">
-                
+                <a href="/Gnanesh_Resume.pdf" download="Gnanesh_Resume.pdf">
+                  Download Resume
+                  <Download className="ml-2 h-4 w-4" />
+                </a>
               </Button>
             </div>
 
