@@ -16,6 +16,10 @@ const Services = () => {
     icon: Layers,
     title: "App Design",
     description: "Mobile UI design, voice interfaces, and accessibility-centered experiences for inclusive applications."
+  }, {
+    icon: Zap,
+    title: "AI Prompt Engineering",
+    description: "Crafting effective prompts and leveraging modern AI tools like ChatGPT, Copilot, and MidJourney to boost productivity and creativity."
   }];
   return <section id="services" className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-6">
