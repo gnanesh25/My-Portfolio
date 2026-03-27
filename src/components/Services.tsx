@@ -35,24 +35,30 @@ const Services = () => {
             </p>
           </div>
 
-          {/* Services grid */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {services.map((service, index) => <div key={service.title} className="glass-card p-8 rounded-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group animate-slide-up" style={{
-            animationDelay: `${index * 0.1}s`
-          }}>
-                {/* Icon */}
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <service.icon className="h-8 w-8 text-primary" />
+          {/* Services grid - 3 on top, 2 centered below */}
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              {services.slice(0, 3).map((service, index) => (
+                <div key={service.title} className="glass-card p-8 rounded-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <service.icon className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">{service.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                 </div>
-
-                {/* Content */}
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {service.description}
-                </p>
-              </div>)}
+              ))}
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 max-w-[66%] mx-auto">
+              {services.slice(3).map((service, index) => (
+                <div key={service.title} className="glass-card p-8 rounded-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group animate-slide-up" style={{ animationDelay: `${(index + 3) * 0.1}s` }}>
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <service.icon className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">{service.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Engagement types */}
