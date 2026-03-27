@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Github, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -54,29 +54,29 @@ const ProjectDetail = () => {
       lessons: "This project taught me the complexities of working with AI/ML models in production, the importance of user privacy in image processing applications, and how to balance computational requirements with user experience. Extensive user testing revealed the need for clear guidance on photo quality and positioning.",
       nextSteps: "Future enhancements include integrating with e-commerce platforms, improving AI model accuracy for diverse body types, adding size recommendation features, and implementing real-time try-on using device cameras."
     },
-    "health-assistant": {
-      title: "AI Health Assistant App",
-      subtitle: "Voice-Enabled Healthcare for Elderly Users",
+    "ecotrack": {
+      title: "EcoTrack - Intelligent Carbon Emission Management",
+      subtitle: "AI-Powered Platform for Tracking & Reducing Carbon Footprint",
       image: healthApp,
-      role: "UI/UX Designer & Developer",
-      timeframe: "5 months",
-      tags: ["AI", "Healthcare", "Accessibility", "Voice UI", "Mobile"],
-      problem: "Elderly and less educated populations face significant barriers in managing their health due to complex medical information, difficulty remembering medication schedules, and challenges navigating traditional healthcare apps. There's a critical need for accessible health management tools that don't require technical literacy.",
-      approach: "Designed a voice-first health assistant application specifically for elderly users, with large, clear interface elements and natural language voice interactions. The app focuses on simplicity, accessibility, and safety, with features that don't require reading or complex navigation.",
-      techStack: ["React Native", "Voice Recognition APIs", "Natural Language Processing", "SQLite", "Cloud Health Records"],
+      role: "Full-Stack Developer & Designer",
+      timeframe: "4 months",
+      tags: ["AI", "Sustainability", "Analytics", "Real-time", "Dashboard"],
+      liveLink: "https://eco-track-topaz.vercel.app/",
+      problem: "Organizations struggle to accurately track and manage their carbon emissions across operations. Without real-time visibility into emission sources and actionable insights, companies cannot effectively reduce their environmental impact or meet sustainability goals.",
+      approach: "Developed an AI-powered carbon emission management platform that helps organizations track their environmental impact in real time. The system analyzes emission data, identifies high-impact sources, and provides actionable recommendations to reduce carbon footprint and improve sustainability performance.",
+      techStack: ["React", "AI/ML Analytics", "Real-time Data Processing", "Dashboard Visualization", "Cloud Infrastructure"],
       features: [
-        "Voice-activated medicine reminders with natural language",
-        "Secure health record storage with easy voice-based retrieval",
-        "Medicine information lookup via voice or image recognition",
-        "Large, high-contrast UI optimized for visual accessibility",
-        "Simple navigation designed for users with limited tech experience",
-        "Emergency contact quick-dial functionality",
-        "Multilingual support for diverse user bases",
-        "Family member notifications and monitoring features"
+        "Real-time carbon emission tracking and monitoring",
+        "AI-powered analysis to identify high-impact emission sources",
+        "Actionable recommendations for reducing carbon footprint",
+        "Interactive dashboard with data visualizations",
+        "Organization-wide sustainability performance metrics",
+        "Historical trend analysis and reporting",
+        "Goal setting and progress tracking for emission reduction"
       ],
-      impact: "The application bridges the digital divide in healthcare, enabling elderly and less literate users to better manage their health independently. User testing with senior citizens showed high satisfaction rates and improved medication adherence.",
-      lessons: "This project emphasized the importance of designing for accessibility from the ground up, not as an afterthought. Key learnings included understanding cognitive load in elderly users, the power of voice interfaces for accessibility, and the need for extensive real-world testing with target users. Privacy and safety considerations were paramount.",
-      nextSteps: "Plans include integrating with pharmacy systems for automatic refill reminders, adding health metric tracking (blood pressure, glucose), implementing AI-powered symptom checking, expanding language support, and conducting clinical trials to measure health outcomes."
+      impact: "The platform enables organizations to gain full visibility into their carbon emissions, make data-driven decisions to reduce environmental impact, and track progress toward sustainability goals effectively.",
+      lessons: "Building this project reinforced the importance of real-time data processing, intuitive data visualization for complex datasets, and designing AI systems that provide actionable rather than abstract recommendations.",
+      nextSteps: "Future plans include adding industry benchmarking, integrating with IoT sensors for automated data collection, regulatory compliance reporting, and expanding AI models for predictive emission forecasting."
     }
   };
 
@@ -152,6 +152,18 @@ const ProjectDetail = () => {
                   </div>
                 )}
               </div>
+
+              {/* Live Link */}
+              {project.liveLink && (
+                <div className="mb-12">
+                  <Button asChild>
+                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View Live Project
+                    </a>
+                  </Button>
+                </div>
+              )}
 
               {/* Content sections */}
               <div className="space-y-12">
