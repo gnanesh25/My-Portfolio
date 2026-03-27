@@ -38,6 +38,7 @@ const ProjectDetail = () => {
       role: "UI/UX Designer & Front-end Developer",
       timeframe: "4 months",
       tags: ["AI", "Computer Vision", "Mobile", "UI/UX", "E-commerce"],
+      liveLink: "https://try-on-x-inky.vercel.app/",
       problem: "Online clothing shopping suffers from high return rates due to customers' inability to visualize how garments will look on their bodies. This creates friction in the purchase decision and leads to environmental waste from returns.",
       approach: "Designed and developed an AI-powered virtual try-on application that allows users to upload full-body photos and see realistic visualizations of how different clothing items would look on them. The system uses computer vision and machine learning to accurately map clothing onto user photos while maintaining natural proportions and lighting.",
       techStack: ["React", "TensorFlow.js", "Computer Vision APIs", "Node.js", "Cloud Storage"],
