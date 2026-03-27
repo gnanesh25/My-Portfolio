@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Github, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -151,6 +151,19 @@ const ProjectDetail = () => {
                     <p className="text-muted-foreground">{project.timeframe}</p>
                   </div>
                 )}
+              </div>
+
+              {/* Live Link */}
+              {project.liveLink && (
+                <div className="mb-12">
+                  <Button asChild>
+                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View Live Project
+                    </a>
+                  </Button>
+                </div>
+              )}
               </div>
 
               {/* Content sections */}
