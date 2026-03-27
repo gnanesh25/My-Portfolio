@@ -164,7 +164,6 @@ const ProjectDetail = () => {
                   </Button>
                 </div>
               )}
-              </div>
 
               {/* Content sections */}
               <div className="space-y-12">
