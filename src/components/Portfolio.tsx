@@ -26,13 +26,13 @@ const Portfolio = () => {
       color: "from-blue-500/20 to-cyan-500/20"
     },
     {
-      id: "health-assistant",
-      title: "AI Health Assistant",
-      description: "Voice-enabled health app designed for elderly and accessibility",
+      id: "ecotrack",
+      title: "EcoTrack",
+      description: "AI-powered carbon emission management platform for organizations",
       image: healthApp,
-      tags: ["AI", "Healthcare", "Accessibility", "Voice UI"],
-      icon: Heart,
-      color: "from-pink-500/20 to-rose-500/20"
+      tags: ["AI", "Sustainability", "Analytics", "Real-time"],
+      icon: Leaf,
+      color: "from-emerald-500/20 to-teal-500/20"
     }
   ];
 
