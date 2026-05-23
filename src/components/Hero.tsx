@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Download } from "lucide-react";
@@ -6,8 +6,13 @@ import heroWorkspace from "@/assets/hero-workspace.jpg";
 import profilePhoto from "@/assets/profile-gnanesh.png";
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [line1, setLine1] = useState(false);
+  const [line2, setLine2] = useState(false);
   useEffect(() => {
     setIsVisible(true);
+    const t1 = setTimeout(() => setLine1(true), 600);
+    const t2 = setTimeout(() => setLine2(true), 1400);
+    return () => { clearTimeout(t1); clearTimeout(t2); };
   }, []);
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background gradient */}
