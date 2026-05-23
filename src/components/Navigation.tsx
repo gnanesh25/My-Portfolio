@@ -61,7 +61,17 @@ const Navigation = () => {
 
           <div className="hidden md:block">
             <Button asChild>
-              <a href="#contact">Contact</a>
+              <Link
+                to="/#contact"
+                onClick={(e) => {
+                  if (location.pathname === "/") {
+                    e.preventDefault();
+                    scrollToSection("/#contact");
+                  }
+                }}
+              >
+                Contact
+              </Link>
             </Button>
           </div>
 
