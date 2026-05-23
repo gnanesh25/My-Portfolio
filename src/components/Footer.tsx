@@ -44,7 +44,7 @@ const Footer = () => {
               <span className="text-xl font-bold">MGR</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              Web Developer & UI/UX Designer crafting modern, accessible digital experiences.
+              Full Stack with AI & UI/UX Designer crafting modern, accessible digital experiences.
             </p>
           </div>
 
