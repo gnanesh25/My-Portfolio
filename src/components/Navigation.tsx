@@ -44,9 +44,6 @@ const Navigation = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">MG</span>
-            </div>
             <span className="text-xl font-bold hidden sm:block">MGR</span>
           </Link>
 
