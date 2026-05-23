@@ -81,7 +81,7 @@ M GNANESH</span>
               <div className="absolute -inset-4 rounded-full bg-primary/10 blur-2xl animate-glow-pulse" />
 
               {/* Profile image */}
-              <img src={profilePhoto} alt="M Gnanesh - Full Stack with AI & UI/UX Designer" className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-primary/60" />
+              <img src={profilePhoto} alt="M Gnanesh - Full Stack with AI & UI/UX Designer" className="relative z-10 w-full h-full object-cover object-[center_20%] rounded-full shadow-2xl ring-4 ring-primary/60" />
             </div>
           </div>
         </div>
