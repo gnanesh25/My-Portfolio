@@ -35,9 +35,14 @@ const Hero = () => {
 M GNANESH</span>
             </h1>
             
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-foreground/90">
-              Web Developer & UI/UX Designer
-            </h2>
+            <div className="h-[80px] sm:h-[96px] md:h-[120px] mb-6 overflow-hidden">
+              <div className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-gradient transition-all duration-700 ${line1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                Full Stack with AI
+              </div>
+              <div className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground/90 transition-all duration-700 delay-200 ${line2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                UI/UX Designer
+              </div>
+            </div>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8">Building modern, accessible web and mobile experiences — from product concept to production. Specializing in front-end development, and human-centered design.</p>
 
