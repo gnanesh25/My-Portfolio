@@ -35,7 +35,7 @@ const Hero = () => {
 M GNANESH</span>
             </h1>
             
-            <div className="h-[80px] sm:h-[96px] md:h-[120px] mb-6 overflow-hidden">
+            <div className="mb-4 leading-tight">
               <div className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-gradient transition-all duration-700 ${line1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 Full Stack with AI
               </div>
