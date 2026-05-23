@@ -6,8 +6,13 @@ import heroWorkspace from "@/assets/hero-workspace.jpg";
 import profilePhoto from "@/assets/profile-gnanesh.png";
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [line1, setLine1] = useState(false);
+  const [line2, setLine2] = useState(false);
   useEffect(() => {
     setIsVisible(true);
+    const t1 = setTimeout(() => setLine1(true), 600);
+    const t2 = setTimeout(() => setLine2(true), 1400);
+    return () => { clearTimeout(t1); clearTimeout(t2); };
   }, []);
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background gradient */}
@@ -30,9 +35,14 @@ const Hero = () => {
 M GNANESH</span>
             </h1>
             
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-foreground/90">
-              Web Developer & UI/UX Designer
-            </h2>
+            <div className="h-[80px] sm:h-[96px] md:h-[120px] mb-6 overflow-hidden">
+              <div className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-gradient transition-all duration-700 ${line1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                Full Stack with AI
+              </div>
+              <div className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground/90 transition-all duration-700 delay-200 ${line2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                UI/UX Designer
+              </div>
+            </div>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8">Building modern, accessible web and mobile experiences — from product concept to production. Specializing in front-end development, and human-centered design.</p>
 
@@ -71,7 +81,7 @@ M GNANESH</span>
               <div className="absolute -inset-4 rounded-full bg-primary/10 blur-2xl animate-glow-pulse" />
 
               {/* Profile image */}
-              <img src={profilePhoto} alt="M Gnanesh - Web Developer & UI/UX Designer" className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-primary/60" />
+              <img src={profilePhoto} alt="M Gnanesh - Full Stack with AI & UI/UX Designer" className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-primary/60" />
             </div>
           </div>
         </div>

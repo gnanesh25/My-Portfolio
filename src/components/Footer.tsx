@@ -41,13 +41,10 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">MG</span>
-              </div>
               <span className="text-xl font-bold">MGR</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              Web Developer & UI/UX Designer crafting modern, accessible digital experiences.
+              Full Stack with AI & UI/UX Designer crafting modern, accessible digital experiences.
             </p>
           </div>
 
