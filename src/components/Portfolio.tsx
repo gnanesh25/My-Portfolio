@@ -14,7 +14,7 @@ const Portfolio = () => {
       image: sootPencil,
       tags: ["Sustainability", "Product Design", "Innovation"],
       icon: Leaf,
-      color: "from-green-500/20 to-emerald-500/20"
+      color: "from-amber-500/20 to-yellow-600/10"
     },
     {
       id: "virtual-tryon",
@@ -23,7 +23,7 @@ const Portfolio = () => {
       image: virtualTryon,
       tags: ["AI", "Computer Vision", "Mobile", "UI/UX"],
       icon: Sparkles,
-      color: "from-blue-500/20 to-cyan-500/20"
+      color: "from-yellow-500/20 to-amber-600/10"
     },
     {
       id: "ecotrack",
@@ -32,7 +32,7 @@ const Portfolio = () => {
       image: healthApp,
       tags: ["AI", "Sustainability", "Analytics", "Real-time"],
       icon: Leaf,
-      color: "from-emerald-500/20 to-teal-500/20"
+      color: "from-amber-400/20 to-yellow-700/10"
     }
   ];
 

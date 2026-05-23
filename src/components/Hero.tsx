@@ -64,13 +64,14 @@ M GNANESH</span>
 
           {/* Right side - Profile photo */}
           <div className="flex justify-center md:justify-end mb-8 md:mb-0">
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-              {/* Animated rings */}
-              <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-ping" />
-              <div className="absolute inset-0 rounded-full border-2 border-primary/20" />
-              
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-float">
+              {/* Animated gold rings */}
+              <div className="absolute inset-0 rounded-full border-2 border-primary/50 animate-gold-ring" />
+              <div className="absolute inset-0 rounded-full border border-primary/40 animate-gold-ring" style={{ animationDelay: '1s' }} />
+              <div className="absolute -inset-4 rounded-full bg-primary/10 blur-2xl animate-glow-pulse" />
+
               {/* Profile image */}
-              <img src={profilePhoto} alt="M Gnanesh - Web Developer & UI/UX Designer" className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-primary/40" />
+              <img src={profilePhoto} alt="M Gnanesh - Web Developer & UI/UX Designer" className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-primary/60" />
             </div>
           </div>
         </div>
