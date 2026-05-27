@@ -1,23 +1,42 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
+
+const NAV_OFFSET = 80;
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const footerLinks = [{
-    name: "Home",
-    href: "/"
-  }, {
-    name: "About",
-    href: "/#about"
-  }, {
-    name: "Portfolio",
-    href: "/#portfolio"
-  }, {
-    name: "Services",
-    href: "/#services"
-  }, {
-    name: "Contact",
-    href: "/#contact"
-  }];
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToId = (id: string) => {
+    if (id === "home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+    const el = document.getElementById(id);
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
+
+  const handleFooterClick = (e: React.MouseEvent, href: string, section: string) => {
+    e.preventDefault();
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => scrollToId(section), 100);
+    } else {
+      scrollToId(section);
+    }
+  };
+
+  const footerLinks = [
+    { name: "Home", href: "/", section: "home" },
+    { name: "About", href: "/#about", section: "about" },
+    { name: "Portfolio", href: "/#portfolio", section: "portfolio" },
+    { name: "Services", href: "/#services", section: "services" },
+    { name: "Contact", href: "/#contact", section: "contact" },
+  ];
   const socialLinks = [{
     icon: Github,
     href: "https://github.com/gnanesh25",
@@ -52,11 +71,17 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {footerLinks.map(link => <li key={link.name}>
-                  <Link to={link.href} className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              {footerLinks.map(link => (
+                <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    onClick={(e) => handleFooterClick(e, link.href, link.section)}
+                    className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                  >
                     {link.name}
                   </Link>
-                </li>)}
+                </li>
+              ))}
             </ul>
           </div>
 

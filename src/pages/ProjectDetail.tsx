@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useLocation, useNavigate } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import sootPencil from "@/assets/soot-pencil.jpg";
 import virtualTryon from "@/assets/virtual-tryon.jpg";
 import healthApp from "@/assets/health-app.jpg";
+
+const NAV_OFFSET = 80;
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -82,6 +84,32 @@ const ProjectDetail = () => {
   };
 
   const project = id ? projects[id] : null;
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToId = (id: string) => {
+    if (id === "home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+    const el = document.getElementById(id);
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
+
+  const handleBackClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate("/");
+    setTimeout(() => scrollToId("portfolio"), 100);
+  };
+
+  const handleContactClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate("/");
+    setTimeout(() => scrollToId("contact"), 100);
+  };
 
   if (!project) {
     return (
@@ -105,7 +133,7 @@ const ProjectDetail = () => {
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4 md:px-6">
             <Button asChild variant="ghost" className="mb-8">
-              <Link to="/#portfolio">
+              <Link to="/#portfolio" onClick={handleBackClick}>
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Portfolio
               </Link>
@@ -239,14 +267,13 @@ const ProjectDetail = () => {
                 </div>
               </div>
 
-              {/* CTA */}
               <div className="mt-16 glass-card p-8 rounded-xl text-center">
                 <h3 className="text-2xl font-bold mb-4">Interested in this project?</h3>
                 <p className="text-muted-foreground mb-6">
                   Let's discuss how I can bring similar innovation to your projects
                 </p>
                 <Button asChild size="lg">
-                  <Link to="/#contact">Get in Touch</Link>
+                  <Link to="/#contact" onClick={handleContactClick}>Get in Touch</Link>
                 </Button>
               </div>
             </div>
