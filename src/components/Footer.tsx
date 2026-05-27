@@ -71,11 +71,17 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {footerLinks.map(link => <li key={link.name}>
-                  <Link to={link.href} className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              {footerLinks.map(link => (
+                <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    onClick={(e) => handleFooterClick(e, link.href, link.section)}
+                    className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                  >
                     {link.name}
                   </Link>
-                </li>)}
+                </li>
+              ))}
             </ul>
           </div>
 
