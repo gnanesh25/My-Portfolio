@@ -133,7 +133,7 @@ const ProjectDetail = () => {
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4 md:px-6">
             <Button asChild variant="ghost" className="mb-8">
-              <Link to="/#portfolio">
+              <Link to="/#portfolio" onClick={handleBackClick}>
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Portfolio
               </Link>
@@ -267,14 +267,13 @@ const ProjectDetail = () => {
                 </div>
               </div>
 
-              {/* CTA */}
               <div className="mt-16 glass-card p-8 rounded-xl text-center">
                 <h3 className="text-2xl font-bold mb-4">Interested in this project?</h3>
                 <p className="text-muted-foreground mb-6">
                   Let's discuss how I can bring similar innovation to your projects
                 </p>
                 <Button asChild size="lg">
-                  <Link to="/#contact">Get in Touch</Link>
+                  <Link to="/#contact" onClick={handleContactClick}>Get in Touch</Link>
                 </Button>
               </div>
             </div>
