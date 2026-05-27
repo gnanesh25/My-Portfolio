@@ -37,6 +37,8 @@ const Navigation = () => {
           behavior: "smooth"
         });
       }
+    } else if (href === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
     setIsMobileMenuOpen(false);
   };
@@ -53,6 +55,9 @@ const Navigation = () => {
             if (link.href.startsWith("/#")) {
               e.preventDefault();
               scrollToSection(link.href);
+            } else if (link.href === "/" && location.pathname === "/") {
+              e.preventDefault();
+              scrollToSection("/");
             }
           }} className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.href ? "text-primary" : "text-foreground/80"}`}>
                 {link.name}
@@ -88,7 +93,11 @@ const Navigation = () => {
             if (link.href.startsWith("/#")) {
               e.preventDefault();
               scrollToSection(link.href);
+            } else if (link.href === "/" && location.pathname === "/") {
+              e.preventDefault();
+              scrollToSection("/");
             }
+            setIsMobileMenuOpen(false);
           }} className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.href ? "text-primary" : "text-foreground/80"}`}>
                   {link.name}
                 </Link>)}
