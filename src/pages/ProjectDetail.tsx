@@ -84,6 +84,32 @@ const ProjectDetail = () => {
   };
 
   const project = id ? projects[id] : null;
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToId = (id: string) => {
+    if (id === "home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+    const el = document.getElementById(id);
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
+
+  const handleBackClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate("/");
+    setTimeout(() => scrollToId("portfolio"), 100);
+  };
+
+  const handleContactClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate("/");
+    setTimeout(() => scrollToId("contact"), 100);
+  };
 
   if (!project) {
     return (
