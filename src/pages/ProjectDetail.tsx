@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useLocation, useNavigate } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import sootPencil from "@/assets/soot-pencil.jpg";
 import virtualTryon from "@/assets/virtual-tryon.jpg";
 import healthApp from "@/assets/health-app.jpg";
+
+const NAV_OFFSET = 80;
 
 const ProjectDetail = () => {
   const { id } = useParams();
