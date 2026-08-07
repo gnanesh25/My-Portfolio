@@ -1,4 +1,5 @@
 import { useParams, Link, useLocation, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -8,13 +9,14 @@ import virtualTryon from "@/assets/virtual-tryon.jpg";
 import healthApp from "@/assets/health-app.jpg";
 
 const NAV_OFFSET = 80;
+const SITE_URL = "https://mgr-portfolio.lovable.app";
 
 const ProjectDetail = () => {
   const { id } = useParams();
 
   const projects: Record<string, any> = {
     "soot-pencil": {
-      title: "Soot Pencil",
+      title: "Soot Pencil — Sustainable Stationery",
       subtitle: "Eco-friendly Alternative to Traditional Graphite",
       image: sootPencil,
       role: "Product Designer & Researcher",
@@ -171,12 +173,12 @@ const ProjectDetail = () => {
               {/* Project details grid */}
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div className="glass-card p-6 rounded-xl">
-                  <h3 className="font-semibold text-lg mb-2">Role</h3>
+                  <h2 className="font-semibold text-lg mb-2">Role</h2>
                   <p className="text-muted-foreground">{project.role}</p>
                 </div>
                 {project.timeframe && (
                   <div className="glass-card p-6 rounded-xl">
-                    <h3 className="font-semibold text-lg mb-2">Timeframe</h3>
+                    <h2 className="font-semibold text-lg mb-2">Timeframe</h2>
                     <p className="text-muted-foreground">{project.timeframe}</p>
                   </div>
                 )}
