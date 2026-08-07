@@ -82,9 +82,10 @@ const Navigation = () => {
           <Link
             to="/"
             onClick={(e) => handleNavClick(e, "/", "home")}
+            aria-label="MGR — M Gnanesh home"
             className="flex items-center space-x-2"
           >
-            <span className="text-xl font-bold hidden sm:block">MGR</span>
+            <span className="text-xl font-bold">MGR</span>
           </Link>
 
           {/* Desktop Navigation */}

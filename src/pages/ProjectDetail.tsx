@@ -1,4 +1,5 @@
 import { useParams, Link, useLocation, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -8,13 +9,14 @@ import virtualTryon from "@/assets/virtual-tryon.jpg";
 import healthApp from "@/assets/health-app.jpg";
 
 const NAV_OFFSET = 80;
+const SITE_URL = "https://mgr-portfolio.lovable.app";
 
 const ProjectDetail = () => {
   const { id } = useParams();
 
   const projects: Record<string, any> = {
     "soot-pencil": {
-      title: "Soot Pencil",
+      title: "Soot Pencil — Sustainable Stationery",
       subtitle: "Eco-friendly Alternative to Traditional Graphite",
       image: sootPencil,
       role: "Product Designer & Researcher",
@@ -124,9 +126,36 @@ const ProjectDetail = () => {
     );
   }
 
+  const pageTitle = `${project.title} — M Gnanesh`;
+  const pageDescription = `${project.subtitle}. ${project.problem}`.slice(0, 155);
+  const pageUrl = `${SITE_URL}/project/${id}`;
+
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>{pageTitle.length > 60 ? `${project.title}`.slice(0, 60) : pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={pageUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={pageUrl} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            name: project.title,
+            description: pageDescription,
+            image: `${SITE_URL}${project.image}`,
+            url: pageUrl,
+            creator: { "@type": "Person", name: "M Gnanesh" },
+          })}
+        </script>
+      </Helmet>
       <Navigation />
+
       
       <main className="pt-20">
         {/* Hero section */}
@@ -171,12 +200,12 @@ const ProjectDetail = () => {
               {/* Project details grid */}
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div className="glass-card p-6 rounded-xl">
-                  <h3 className="font-semibold text-lg mb-2">Role</h3>
+                  <h2 className="font-semibold text-lg mb-2">Role</h2>
                   <p className="text-muted-foreground">{project.role}</p>
                 </div>
                 {project.timeframe && (
                   <div className="glass-card p-6 rounded-xl">
-                    <h3 className="font-semibold text-lg mb-2">Timeframe</h3>
+                    <h2 className="font-semibold text-lg mb-2">Timeframe</h2>
                     <p className="text-muted-foreground">{project.timeframe}</p>
                   </div>
                 )}

@@ -33,6 +33,7 @@ const Hero = () => {
               <span className="text-foreground">Hello, I'm </span>
               <span className="text-gradient whitespace-nowrap">
 M GNANESH</span>
+              <span className="sr-only"> — Full Stack AI Developer & UI/UX Designer</span>
             </h1>
             
             <div className="mb-4 leading-tight">
@@ -64,9 +65,8 @@ M GNANESH</span>
 
             {/* Quick contact */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start items-center text-sm">
-              <a href="tel:+919538442239" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                
-                
+              <a href="tel:+919538442239" aria-label="Call M Gnanesh at +91 95384 42239" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                <span>+91 95384 42239</span>
               </a>
               
             </div>
