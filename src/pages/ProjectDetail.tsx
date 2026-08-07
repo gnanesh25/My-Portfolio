@@ -126,9 +126,36 @@ const ProjectDetail = () => {
     );
   }
 
+  const pageTitle = `${project.title} — M Gnanesh`;
+  const pageDescription = `${project.subtitle}. ${project.problem}`.slice(0, 155);
+  const pageUrl = `${SITE_URL}/project/${id}`;
+
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>{pageTitle.length > 60 ? `${project.title}`.slice(0, 60) : pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={pageUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={pageUrl} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            name: project.title,
+            description: pageDescription,
+            image: `${SITE_URL}${project.image}`,
+            url: pageUrl,
+            creator: { "@type": "Person", name: "M Gnanesh" },
+          })}
+        </script>
+      </Helmet>
       <Navigation />
+
       
       <main className="pt-20">
         {/* Hero section */}
