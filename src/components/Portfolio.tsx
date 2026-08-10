@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Leaf, Sparkles } from "lucide-react";
+import { ArrowRight, Leaf, Sparkles, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import sootPencil from "@/assets/soot-pencil.jpg";
 import virtualTryon from "@/assets/virtual-tryon.jpg";
 import healthApp from "@/assets/health-app.jpg";
+import studyBuddy from "@/assets/study-buddy.jpg";
 
 const Portfolio = () => {
   const projects = [
