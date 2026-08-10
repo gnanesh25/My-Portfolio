@@ -16,6 +16,7 @@ const entries: SitemapEntry[] = [
   { path: "/project/soot-pencil", changefreq: "monthly", priority: "0.8" },
   { path: "/project/virtual-tryon", changefreq: "monthly", priority: "0.8" },
   { path: "/project/ecotrack", changefreq: "monthly", priority: "0.8" },
+  { path: "/project/study-buddy", changefreq: "monthly", priority: "0.8" },
 ]
 
 function generateSitemap(entries: SitemapEntry[]) {
