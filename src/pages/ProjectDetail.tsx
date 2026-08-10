@@ -83,6 +83,30 @@ const ProjectDetail = () => {
       impact: "The platform enables organizations to gain full visibility into their carbon emissions, make data-driven decisions to reduce environmental impact, and track progress toward sustainability goals effectively.",
       lessons: "Building this project reinforced the importance of real-time data processing, intuitive data visualization for complex datasets, and designing AI systems that provide actionable rather than abstract recommendations.",
       nextSteps: "Future plans include adding industry benchmarking, integrating with IoT sensors for automated data collection, regulatory compliance reporting, and expanding AI models for predictive emission forecasting."
+    },
+    "study-buddy": {
+      title: "Study-Buddy.AI",
+      subtitle: "AI-Powered Student Productivity Platform",
+      image: studyBuddy,
+      role: "Full-Stack Developer & UI/UX Designer",
+      timeframe: "3 months",
+      tags: ["AI", "Productivity", "Education", "UI/UX", "Dashboard"],
+      liveLink: "https://study-buddy-mgr.lovable.app/",
+      problem: "Students often struggle to manage their study schedules, stay focused, track progress, and maintain consistent productivity. Existing tools are fragmented, forcing learners to jump between apps for tasks, notes, timers, and goal tracking.",
+      approach: "Built an all-in-one AI-powered study management platform that combines task scheduling, notes, a Pomodoro timer, goal tracking, progress analytics, and personalized dashboards into a responsive, user-friendly experience designed to keep students motivated and organized.",
+      techStack: ["React", "AI Assistance", "Task Scheduling", "Pomodoro Timer", "Progress Analytics", "Responsive UI"],
+      features: [
+        "Smart task scheduling with priority management",
+        "Integrated notes workspace for organized study material",
+        "Built-in Pomodoro timer for focused study sessions",
+        "Goal tracking with milestone progress visualization",
+        "Personalized dashboards with progress analytics",
+        "Responsive design optimized for mobile and desktop",
+        "Clean, distraction-free UI/UX for better concentration"
+      ],
+      impact: "The platform helps students improve time management, maintain focus, and track academic progress in one cohesive tool. It demonstrates how thoughtful UI/UX and AI assistance can make productivity feel effortless for learners.",
+      lessons: "This project deepened my understanding of designing productivity-focused interfaces, balancing feature richness with simplicity, and building responsive dashboards that feel fast and intuitive across devices.",
+      nextSteps: "Future enhancements include AI-generated study plans, calendar integration, collaborative study rooms, streak-based gamification, and mobile app deployment."
     }
   };
 
