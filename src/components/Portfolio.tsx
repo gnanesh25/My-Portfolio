@@ -34,6 +34,15 @@ const Portfolio = () => {
       tags: ["AI", "Sustainability", "Analytics", "Real-time"],
       icon: Leaf,
       color: "from-amber-400/20 to-yellow-700/10"
+    },
+    {
+      id: "study-buddy",
+      title: "Study-Buddy.AI",
+      description: "AI-powered student productivity platform with scheduling, notes, and analytics",
+      image: studyBuddy,
+      tags: ["AI", "Productivity", "Education", "UI/UX"],
+      icon: Brain,
+      color: "from-yellow-400/20 to-amber-500/10"
     }
   ];
 
