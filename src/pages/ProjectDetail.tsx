@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import sootPencil from "@/assets/soot-pencil.jpg";
 import virtualTryon from "@/assets/virtual-tryon.jpg";
 import healthApp from "@/assets/health-app.jpg";
+import studyBuddy from "@/assets/study-buddy.jpg";
 
 const NAV_OFFSET = 80;
 const SITE_URL = "https://mgr-portfolio.lovable.app";
