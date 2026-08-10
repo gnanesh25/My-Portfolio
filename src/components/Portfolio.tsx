@@ -121,7 +121,7 @@ const Portfolio = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
             {[
-              { number: "3+", label: "Major Projects" },
+              { number: "4+", label: "Major Projects" },
               { number: "100%", label: "Client Satisfaction" },
               { number: "AI", label: "Technology Focus" },
               { number: "Impact", label: "Social Good" }
