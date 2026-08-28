@@ -57,7 +57,7 @@ const About = () => {
               </div>
             </div>
 
-            </div>
+
 
             {/* Skills */}
             <div className="space-y-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>
