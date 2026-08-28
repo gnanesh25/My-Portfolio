@@ -83,12 +83,14 @@ const About = () => {
 
           {/* Experience highlight */}
           <div className="glass-card p-8 rounded-xl text-center">
-            <h3 className="text-2xl font-bold mb-4">Professional Experience</h3>
+            <h3 className="text-2xl font-bold mb-4">Leadership &amp; Training</h3>
             <p className="text-muted-foreground max-w-3xl mx-auto">
-              Website Manager for IUCEE Student National Chapter • Multiple AI and sustainability-focused projects • 
-              Combining practical engineering with social impact through innovative digital solutions
+              Web Development Trainer for 100+ students (HTML, CSS, JavaScript, Figma) • Website Head — IUCEE National
+              Student Chapter • Web Development Guide — Google Developer Groups • Winner, National-Level Sustainable
+              Technology Development Event (IASF)
             </p>
           </div>
+
         </div>
       </div>
     </section>
