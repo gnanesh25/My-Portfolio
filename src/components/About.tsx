@@ -1,23 +1,24 @@
-import { GraduationCap, Code2, Palette, Globe } from "lucide-react";
+import { GraduationCap, Code2, Palette, Users } from "lucide-react";
 
 const About = () => {
   const skills = [
     {
       icon: Code2,
-      title: "Front-end Development",
-      description: "HTML, CSS, JavaScript"
+      title: "Programming & Development",
+      description: "Python, HTML5, CSS3, JavaScript, Supabase"
     },
     {
       icon: Palette,
-      title: "UI/UX Design",
-      description: "Figma, User Research, Prototyping, Usability Testing"
+      title: "UI/UX & Design",
+      description: "Figma, Stitch, Canva, user-focused responsive interfaces"
     },
     {
-      icon: Globe,
-      title: "Responsive Design",
-      description: "Mobile-first approach, Cross-browser compatibility"
+      icon: Users,
+      title: "Professional Skills",
+      description: "Teamwork, Communication, Leadership, Problem Solving, Adaptability"
     }
   ];
+
 
   return (
     <section id="about" className="py-20 md:py-32 relative">
