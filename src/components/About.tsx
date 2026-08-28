@@ -36,12 +36,13 @@ const About = () => {
             {/* Bio */}
             <div className="space-y-6 animate-slide-up">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I am passionate about web development and UI/UX designing. I hold a BE in Computer Science & Business Systems 
-                and specialize in front-end development, responsive interfaces, and human-centered product design.
+                I am a Computer Science &amp; Business Systems undergraduate at Malnad College of Engineering with
+                hands-on experience in Python, HTML, CSS, JavaScript, Supabase, AI-powered applications and UI/UX design.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I've managed the official IUCEE Student National Chapter website and led projects that blend AI, sustainability, 
-                and social impact. My work focuses on creating accessible, beautiful digital experiences that solve real-world problems.
+                I build web-based solutions and have trained 100+ students through hands-on web development workshops.
+                As Website Head of the IUCEE National Student Chapter, I lead digital initiatives — and I'm passionate
+                about building innovative AI and software products with real-world impact.
               </p>
               <div className="glass-card p-6 rounded-xl">
                 <div className="flex items-start gap-4">
@@ -50,10 +51,12 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Education</h3>
-                    <p className="text-muted-foreground">BE in Computer Science & Business Systems</p>
+                    <p className="text-muted-foreground">B.E. Computer Science &amp; Business Systems, Malnad College of Engineering — 2027 • CGPA 8.00/10</p>
                   </div>
                 </div>
               </div>
+            </div>
+
             </div>
 
             {/* Skills */}
