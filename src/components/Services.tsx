@@ -1,26 +1,31 @@
-import { Code, Palette, Monitor, Smartphone, Layers, Zap } from "lucide-react";
+import { Code, Palette, Monitor, Database, Layers, Zap } from "lucide-react";
 const Services = () => {
   const services = [{
     icon: Code,
-    title: "Web Development",
-    description: "Modern responsive websites, single-page applications, and performance optimization for fast, scalable solutions."
+    title: "Programming",
+    description: "Python, HTML5, CSS3 and JavaScript for building responsive, performant web solutions."
   }, {
     icon: Palette,
     title: "UI/UX Design",
-    description: "User research, wireframing, prototyping, and usability testing to create intuitive, beautiful interfaces."
+    description: "Figma, Stitch and Canva — wireframing, prototyping and user-focused responsive interfaces."
   }, {
     icon: Monitor,
-    title: "Front-end Development",
-    description: "HTML, CSS, and JavaScript expertise with component-driven, maintainable architecture."
+    title: "Web Development",
+    description: "Modern responsive websites and single-page applications with clean, maintainable structure."
   }, {
-    icon: Layers,
-    title: "App Design",
-    description: "Mobile UI design, voice interfaces, and accessibility-centered experiences for inclusive applications."
+    icon: Database,
+    title: "Backend & Data",
+    description: "Supabase for authentication, databases and storage powering full-stack applications."
   }, {
     icon: Zap,
-    title: "AI Prompt Engineering",
-    description: "Crafting effective prompts and leveraging modern AI tools like ChatGPT, Copilot, and MidJourney to boost productivity and creativity."
+    title: "AI & Prompt Engineering",
+    description: "Building AI-powered apps with GPT, Claude and Cursor, plus effective prompt engineering workflows."
+  }, {
+    icon: Layers,
+    title: "Tools & Collaboration",
+    description: "GitHub, Lovable, Replit, Antigravity and VS Code, with teamwork, leadership and communication."
   }];
+
   return <section id="services" className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
