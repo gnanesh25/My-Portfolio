@@ -1,26 +1,31 @@
-import { Code, Palette, Monitor, Smartphone, Layers, Zap } from "lucide-react";
+import { Code, Palette, Monitor, Database, Layers, Zap } from "lucide-react";
 const Services = () => {
   const services = [{
     icon: Code,
-    title: "Web Development",
-    description: "Modern responsive websites, single-page applications, and performance optimization for fast, scalable solutions."
+    title: "Programming",
+    description: "Python, HTML5, CSS3 and JavaScript for building responsive, performant web solutions."
   }, {
     icon: Palette,
     title: "UI/UX Design",
-    description: "User research, wireframing, prototyping, and usability testing to create intuitive, beautiful interfaces."
+    description: "Figma, Stitch and Canva — wireframing, prototyping and user-focused responsive interfaces."
   }, {
     icon: Monitor,
-    title: "Front-end Development",
-    description: "HTML, CSS, and JavaScript expertise with component-driven, maintainable architecture."
+    title: "Web Development",
+    description: "Modern responsive websites and single-page applications with clean, maintainable structure."
   }, {
-    icon: Layers,
-    title: "App Design",
-    description: "Mobile UI design, voice interfaces, and accessibility-centered experiences for inclusive applications."
+    icon: Database,
+    title: "Backend & Data",
+    description: "Supabase for authentication, databases and storage powering full-stack applications."
   }, {
     icon: Zap,
-    title: "AI Prompt Engineering",
-    description: "Crafting effective prompts and leveraging modern AI tools like ChatGPT, Copilot, and MidJourney to boost productivity and creativity."
+    title: "AI & Prompt Engineering",
+    description: "Building AI-powered apps with GPT, Claude and Cursor, plus effective prompt engineering workflows."
+  }, {
+    icon: Layers,
+    title: "Tools & Collaboration",
+    description: "GitHub, Lovable, Replit, Antigravity and VS Code, with teamwork, leadership and communication."
   }];
+
   return <section id="services" className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
@@ -35,10 +40,10 @@ const Services = () => {
             </p>
           </div>
 
-          {/* Services grid - 3 on top, 2 centered below */}
+          {/* Services grid */}
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-              {services.slice(0, 3).map((service, index) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((service, index) => (
                 <div key={service.title} className="glass-card p-8 rounded-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <service.icon className="h-8 w-8 text-primary" />
@@ -48,18 +53,8 @@ const Services = () => {
                 </div>
               ))}
             </div>
-            <div className="grid md:grid-cols-2 gap-8 max-w-[66%] mx-auto">
-              {services.slice(3).map((service, index) => (
-                <div key={service.title} className="glass-card p-8 rounded-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group animate-slide-up" style={{ animationDelay: `${(index + 3) * 0.1}s` }}>
-                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <service.icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">{service.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
-                </div>
-              ))}
-            </div>
           </div>
+
 
           {/* Engagement types */}
           

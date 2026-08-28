@@ -1,23 +1,24 @@
-import { GraduationCap, Code2, Palette, Globe } from "lucide-react";
+import { GraduationCap, Code2, Palette, Users } from "lucide-react";
 
 const About = () => {
   const skills = [
     {
       icon: Code2,
-      title: "Front-end Development",
-      description: "HTML, CSS, JavaScript"
+      title: "Programming & Development",
+      description: "Python, HTML5, CSS3, JavaScript, Supabase"
     },
     {
       icon: Palette,
-      title: "UI/UX Design",
-      description: "Figma, User Research, Prototyping, Usability Testing"
+      title: "UI/UX & Design",
+      description: "Figma, Stitch, Canva, user-focused responsive interfaces"
     },
     {
-      icon: Globe,
-      title: "Responsive Design",
-      description: "Mobile-first approach, Cross-browser compatibility"
+      icon: Users,
+      title: "Professional Skills",
+      description: "Teamwork, Communication, Leadership, Problem Solving, Adaptability"
     }
   ];
+
 
   return (
     <section id="about" className="py-20 md:py-32 relative">
@@ -35,12 +36,13 @@ const About = () => {
             {/* Bio */}
             <div className="space-y-6 animate-slide-up">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I am passionate about web development and UI/UX designing. I hold a BE in Computer Science & Business Systems 
-                and specialize in front-end development, responsive interfaces, and human-centered product design.
+                I am a Computer Science &amp; Business Systems undergraduate at Malnad College of Engineering with
+                hands-on experience in Python, HTML, CSS, JavaScript, Supabase, AI-powered applications and UI/UX design.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I've managed the official IUCEE Student National Chapter website and led projects that blend AI, sustainability, 
-                and social impact. My work focuses on creating accessible, beautiful digital experiences that solve real-world problems.
+                I build web-based solutions and have trained 100+ students through hands-on web development workshops.
+                As Website Head of the IUCEE National Student Chapter, I lead digital initiatives — and I'm passionate
+                about building innovative AI and software products with real-world impact.
               </p>
               <div className="glass-card p-6 rounded-xl">
                 <div className="flex items-start gap-4">
@@ -49,11 +51,13 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Education</h3>
-                    <p className="text-muted-foreground">BE in Computer Science & Business Systems</p>
+                    <p className="text-muted-foreground">B.E. Computer Science &amp; Business Systems, Malnad College of Engineering — 2027 • CGPA 8.00/10</p>
                   </div>
                 </div>
               </div>
             </div>
+
+
 
             {/* Skills */}
             <div className="space-y-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>
@@ -79,12 +83,14 @@ const About = () => {
 
           {/* Experience highlight */}
           <div className="glass-card p-8 rounded-xl text-center">
-            <h3 className="text-2xl font-bold mb-4">Professional Experience</h3>
+            <h3 className="text-2xl font-bold mb-4">Leadership &amp; Training</h3>
             <p className="text-muted-foreground max-w-3xl mx-auto">
-              Website Manager for IUCEE Student National Chapter • Multiple AI and sustainability-focused projects • 
-              Combining practical engineering with social impact through innovative digital solutions
+              Web Development Trainer for 100+ students (HTML, CSS, JavaScript, Figma) • Website Head — IUCEE National
+              Student Chapter • Web Development Guide — Google Developer Groups • Winner, National-Level Sustainable
+              Technology Development Event (IASF)
             </p>
           </div>
+
         </div>
       </div>
     </section>
