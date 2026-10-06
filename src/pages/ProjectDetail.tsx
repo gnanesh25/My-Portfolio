@@ -8,6 +8,7 @@ import sootPencil from "@/assets/soot-pencil.jpg";
 import virtualTryon from "@/assets/virtual-tryon.jpg";
 import healthApp from "@/assets/health-app.jpg";
 import studyBuddy from "@/assets/study-buddy.jpg";
+import nescafeProject from "@/assets/nescafe-project.jpg";
 
 const NAV_OFFSET = 80;
 const SITE_URL = "https://mgr-portfolio.lovable.app";
@@ -107,6 +108,28 @@ const ProjectDetail = () => {
       impact: "The platform helps students improve time management, maintain focus, and track academic progress in one cohesive tool. It demonstrates how thoughtful UI/UX and AI assistance can make productivity feel effortless for learners.",
       lessons: "This project deepened my understanding of designing productivity-focused interfaces, balancing feature richness with simplicity, and building responsive dashboards that feel fast and intuitive across devices.",
       nextSteps: "Future enhancements include AI-generated study plans, calendar integration, collaborative study rooms, streak-based gamification, and mobile app deployment."
+    },
+    "nescafe": {
+      title: "Nescafé — Sustainable Coffee Carbon Tracker",
+      subtitle: "AI-Powered Carbon Emission Insights for Nescafé Operations",
+      image: nescafeProject,
+      role: "Full-Stack Developer & UI/UX Designer",
+      tags: ["AI", "Sustainability", "Coffee Supply Chain", "Analytics"],
+      liveLink: "https://eco-track-topaz.vercel.app/",
+      problem: "Coffee production — from farming and processing to packaging and transport — generates significant carbon emissions. Brands like Nescafé need clear, real-time visibility into where emissions come from to meet sustainability commitments.",
+      approach: "Built an AI-powered platform that tracks, forecasts, and analyzes emissions across the Nescafé value chain, highlights high-impact sources, and generates actionable, data-driven recommendations to reduce the carbon footprint.",
+      techStack: ["Tailwind CSS", "Python", "JavaScript", "Supabase", "AI/Prompt Engineering"],
+      features: [
+        "Track emissions across farming, processing, packaging and transport",
+        "AI forecasting of future carbon footprint",
+        "Identification of high-impact emission sources",
+        "Actionable reduction recommendations",
+        "Interactive dashboards and trend reports",
+        "Goal setting and progress tracking"
+      ],
+      impact: "Gives sustainability teams a single place to understand and reduce Nescafé's environmental impact, supporting greener sourcing and operations.",
+      lessons: "Learned how to model supply-chain emission data and present complex sustainability metrics in a clear, decision-ready way.",
+      nextSteps: "Plans include farm-level data integration, supplier benchmarking, and automated sustainability compliance reports."
     }
   };
 
