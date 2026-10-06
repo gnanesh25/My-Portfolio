@@ -115,7 +115,7 @@ const ProjectDetail = () => {
       image: nescafeProject,
       role: "Front-end Developer & UI/UX Designer",
       tags: ["UI/UX", "Web Design", "Responsive", "Brand"],
-      liveLink: "https://eco-track-topaz.vercel.app/",
+      liveLink: "https://nescafe-mgr.vercel.app/",
       problem: "Nescafé needed a simple, polished web presence that showcases the brand and its coffee offerings in a clean, engaging way — without overwhelming visitors with clutter or slow, heavy pages.",
       approach: "Designed and built a responsive brand website with a clear content structure: a welcoming hero, product highlights, brand storytelling sections, and easy navigation throughout. The focus was on a smooth, distraction-free experience that feels true to Nescafé's warm, energetic brand.",
       techStack: ["React", "Tailwind CSS", "JavaScript", "Figma"],
