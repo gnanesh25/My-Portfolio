@@ -14,7 +14,7 @@ const Hero = () => {
     const t2 = setTimeout(() => setLine2(true), 1400);
     return () => { clearTimeout(t1); clearTimeout(t2); };
   }, []);
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  return <section className="relative flex items-center justify-center overflow-hidden pt-28 pb-16 md:pt-32 md:pb-20 lg:min-h-[min(100vh,900px)]">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background" />
       
