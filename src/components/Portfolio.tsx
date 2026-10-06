@@ -47,10 +47,10 @@ const Portfolio = () => {
     },
     {
       id: "nescafe",
-      title: "Nescafé Carbon Tracker",
-      description: "AI-powered carbon emission tracking for Nescafé's sustainable coffee supply chain",
+      title: "Nescafé Website",
+      description: "A clean, modern brand website for Nescafé with product showcase and smooth navigation",
       image: nescafeProject,
-      tags: ["AI", "Sustainability", "Supply Chain", "Analytics"],
+      tags: ["UI/UX", "Web Design", "Responsive", "Brand"],
       icon: Coffee,
       color: "from-amber-500/20 to-yellow-700/10"
     }
