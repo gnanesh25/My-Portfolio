@@ -109,27 +109,27 @@ const ProjectDetail = () => {
       lessons: "This project deepened my understanding of designing productivity-focused interfaces, balancing feature richness with simplicity, and building responsive dashboards that feel fast and intuitive across devices.",
       nextSteps: "Future enhancements include AI-generated study plans, calendar integration, collaborative study rooms, streak-based gamification, and mobile app deployment."
     },
-    "nescafe": {
-      title: "Nescafé — Sustainable Coffee Carbon Tracker",
-      subtitle: "AI-Powered Carbon Emission Insights for Nescafé Operations",
+"nescafe": {
+      title: "Nescafé — Brand Website",
+      subtitle: "A Clean, Modern Website Experience for Nescafé",
       image: nescafeProject,
-      role: "Full-Stack Developer & UI/UX Designer",
-      tags: ["AI", "Sustainability", "Coffee Supply Chain", "Analytics"],
+      role: "Front-end Developer & UI/UX Designer",
+      tags: ["UI/UX", "Web Design", "Responsive", "Brand"],
       liveLink: "https://eco-track-topaz.vercel.app/",
-      problem: "Coffee production — from farming and processing to packaging and transport — generates significant carbon emissions. Brands like Nescafé need clear, real-time visibility into where emissions come from to meet sustainability commitments.",
-      approach: "Built an AI-powered platform that tracks, forecasts, and analyzes emissions across the Nescafé value chain, highlights high-impact sources, and generates actionable, data-driven recommendations to reduce the carbon footprint.",
-      techStack: ["Tailwind CSS", "Python", "JavaScript", "Supabase", "AI/Prompt Engineering"],
+      problem: "Nescafé needed a simple, polished web presence that showcases the brand and its coffee offerings in a clean, engaging way — without overwhelming visitors with clutter or slow, heavy pages.",
+      approach: "Designed and built a responsive brand website with a clear content structure: a welcoming hero, product highlights, brand storytelling sections, and easy navigation throughout. The focus was on a smooth, distraction-free experience that feels true to Nescafé's warm, energetic brand.",
+      techStack: ["React", "Tailwind CSS", "JavaScript", "Figma"],
       features: [
-        "Track emissions across farming, processing, packaging and transport",
-        "AI forecasting of future carbon footprint",
-        "Identification of high-impact emission sources",
-        "Actionable reduction recommendations",
-        "Interactive dashboards and trend reports",
-        "Goal setting and progress tracking"
+        "Clean, modern homepage with brand hero section",
+        "Product showcase with highlights",
+        "Smooth navigation and subtle scroll animations",
+        "Fully responsive layout for mobile, tablet and desktop",
+        "Fast, lightweight pages with a distraction-free UI",
+        "Clear call-to-action sections for engagement"
       ],
-      impact: "Gives sustainability teams a single place to understand and reduce Nescafé's environmental impact, supporting greener sourcing and operations.",
-      lessons: "Learned how to model supply-chain emission data and present complex sustainability metrics in a clear, decision-ready way.",
-      nextSteps: "Plans include farm-level data integration, supplier benchmarking, and automated sustainability compliance reports."
+      impact: "The website gives Nescafé a simple, professional web presence where visitors can quickly explore the brand and its products, with a smooth experience on any device.",
+      lessons: "This project strengthened my skills in brand-focused UI design — keeping layouts clean, balancing imagery with whitespace, and delivering a fast, responsive experience.",
+      nextSteps: "Future enhancements include a product catalog with detail pages, localization for multiple regions, and CMS-driven content updates."
     }
   };
 
