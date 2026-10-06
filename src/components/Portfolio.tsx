@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Leaf, Sparkles, Brain } from "lucide-react";
+import { ArrowRight, Leaf, Sparkles, Brain, Coffee } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import sootPencil from "@/assets/soot-pencil.jpg";
 import virtualTryon from "@/assets/virtual-tryon.jpg";
 import healthApp from "@/assets/health-app.jpg";
 import studyBuddy from "@/assets/study-buddy.jpg";
+import nescafeProject from "@/assets/nescafe-project.jpg";
 
 const Portfolio = () => {
   const projects = [
@@ -43,6 +44,15 @@ const Portfolio = () => {
       tags: ["AI", "Productivity", "Education", "UI/UX"],
       icon: Brain,
       color: "from-yellow-400/20 to-amber-500/10"
+    },
+    {
+      id: "nescafe",
+      title: "Nescafé Carbon Tracker",
+      description: "AI-powered carbon emission tracking for Nescafé's sustainable coffee supply chain",
+      image: nescafeProject,
+      tags: ["AI", "Sustainability", "Supply Chain", "Analytics"],
+      icon: Coffee,
+      color: "from-amber-500/20 to-yellow-700/10"
     }
   ];
 
